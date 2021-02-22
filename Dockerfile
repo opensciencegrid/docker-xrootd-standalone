@@ -26,5 +26,6 @@ RUN if [[ $BASE_YUM_REPO = release ]]; then \
     rm -rf /var/cache/yum/*
 
 ADD supervisord.d/* /etc/supervisord.d/
+ADD xcache/sbin/* /usr/local/sbin/
 ADD image-config.d/* /etc/osg/image-config.d/
 ADD xrootd/* /etc/xrootd/config.d/
