@@ -4,7 +4,7 @@ if [[ -n $XC_LOCAL_REDIRECTORS ]]; then
     # Tell Supervisor to start up a cmsd process 
     cat <<EOF > /etc/supervisord.d/10-standlone-cmsd.conf
 [program:cmsd-standalone]
-command=/usr/bin/cmsd -c /etc/xrootd/xrootd-standalone.cfg -k fifo -n xrootd-standalone -k 10 -s /var/run/xrootd/cmsd-standalone.pid -l /var/log/xrootd/cmsd.log
+command=/usr/bin/cmsd -c /etc/xrootd/xrootd-standalone.cfg -k fifo -n standalone -k 10 -s /var/run/xrootd/cmsd-standalone.pid -l /var/log/xrootd/cmsd.log
 user=xrootd
 autorestart=true
 EOF
