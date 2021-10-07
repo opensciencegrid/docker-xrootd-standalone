@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - SOFTWARE-4832
   repository_dispatch:
     types:
       - dispatch-build
