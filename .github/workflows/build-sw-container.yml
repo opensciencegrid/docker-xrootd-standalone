@@ -28,7 +28,10 @@ jobs:
     strategy:
       fail-fast: False
       matrix:
-        repo: ['development', 'testing', 'release']
+        repo:
+          - 'development'
+          - 'testing'
+          - 'release'
 
     steps:
 
