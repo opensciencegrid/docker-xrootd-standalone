@@ -28,13 +28,11 @@ jobs:
     strategy:
       fail-fast: False
       matrix:
-        name:
-          - name1
-          - name2
-        repo:
-          - 'development'
-          - 'testing'
-          - 'release'
+        registries:
+          - name: name1
+            repo: 'development'
+          - name: name2
+            repo: 'testing'
 
     steps:
 
