@@ -33,7 +33,7 @@ jobs:
           - url: hub.opensciencegrid.org
             username: OSG_HARBOR_ROBOT_USER
             password: OSG_HARBOR_ROBOT_PASSWORD
-          - url: hub.opensciencegrid.org
+          - url: docker.io
             username: DOCKER_USERNAME
             password: DOCKER_PASSWORD
 
