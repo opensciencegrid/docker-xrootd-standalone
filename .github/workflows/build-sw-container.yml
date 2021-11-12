@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - SOFTWARE-4832
   repository_dispatch:
     types:
       - dispatch-build
@@ -13,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: startsWith(github.repository, 'yongleyuan/')
+    if: startsWith(github.repository, 'opensciencegrid/')
     strategy:
       fail-fast: False
       matrix:
